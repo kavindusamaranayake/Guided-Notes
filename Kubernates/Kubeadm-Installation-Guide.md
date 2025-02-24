@@ -92,6 +92,12 @@ a) Initialize the Kubernetes master node.
 
  # Network Plugin = calico
  kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.26.0/manifests/calico.yaml
+
+ # Deploy Networking Solution (Calico)
+ kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+
+ # Deploy Ingress Controller (NGINX)
+ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v0.49.0/deploy/static/provider/baremetal/deploy.yaml
 ```
 After succesfully running, your Kubernetes control plane will be initialized successfully.
 
