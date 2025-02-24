@@ -20,6 +20,10 @@ Run the following commands on both the master and worker nodes to prepare them f
 
  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
 
+ # Install Docker
+ sudo apt install docker.io -y
+ sudo chmod 666 /var/run/docker.sock
+
  chmod +x kubectl
  mkdir -p ~/.local/bin
  mv ./kubectl ~/.local/bin/kubectl
